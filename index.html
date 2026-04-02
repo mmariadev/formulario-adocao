@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>ONG Focinhos</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <h1> Adoção de cães(ONG)</h1>
+    <h1> ONG Focinhos</h1>
     <P>Preencha o formulário abaixo e aguarde nossos colaboradores avaliarem se seu perfil está apto para adoção.</P>
     <form>
 
@@ -72,10 +73,17 @@
 
         <div class="motivo_adoção">
             <label for="motivo_adoção"><br>Qual o motivo da adoção?</label><br>
-            <textarea id="motivo_adoção" name="motivo_adoção" rows="4" cols="50"></textarea><br>
+            <textarea id="motivo_adoção" name="motivo_adoção" rows="4" cols="50"></textarea><br><br>
         </div>
 
-        
+        <div class="concorda_termos">
+            <input type="checkbox" id="concorda_termos" name="concorda_termos" value="sim">
+            <label for="concorda_termos"><br>Concordo com os termos e condições de responsabilidade</label><br>
+        </div>
+
+        <div class="enviar">
+            <input type="submit" value="Enviar">
+        </div>
     </form>
 </body>
 </html>
