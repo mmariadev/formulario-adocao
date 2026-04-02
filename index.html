@@ -36,7 +36,39 @@
             <input type="number" id="idade" name="idade" min="1" max="100"
         </div>
 
-        <div class="cidade"
+        <div class="cidade">
+            <label for="cidade"><br>Insira sua cidade:</label><br>
+            <input type="text" id="cidade" name="cidade"><br>
+        </div>
+
+        <div class="tipo_residencia">
+            <label for="tipo_residencia"><br>Selecione o tipo de residência:</label><br>
+            <select id="tipo_residencia" name="tipo_residencia">
+                <option value="casa">Casa</option>
+                <option value="apartamento">Apartamento</option>
+            </select><br>
+        </div>
+
+        <div class="possui_quintal">
+            <label for="possui_quintal"><br>Possui quintal?</label><br>
+            <input type="radio" id="possui_quintal_sim" name="possui_quintal" value="sim">
+            <label for="possui_quintal_sim">Sim</label><br>
+            <input type="radio" id="possui_quintal_nao" name="possui_quintal" value="nao">
+            <label for="possui_quintal_nao">Não</label><br>
+        </div>
+
+        <div class="ja_teve_pet">
+            <label for="ja_teve_pet"><br>Já teve um pet?</label><br>
+            <input type="radio" id="ja_teve_pet_sim" name="ja_teve_pet" value="sim">
+            <label for="ja_teve_pet_sim">Sim</label><br>
+            <input type="radio" id="ja_teve_pet_nao" name="ja_teve_pet" value="nao">
+            <label for="ja_teve_pet_nao">Não</label><br>
+        </div>
+
+        <div class="quantas_horas_pet_sozinho">
+            <label for="quantas_horas_pet_sozinho"><br>Quantas horas por dia o pet ficaria sozinho?</label><br>
+            <input type="number" id="quantas_horas_pet_sozinho" name="quantas_horas_pet_sozinho" min="0" max="24"><br>
+        </div>
     </form>
 </body>
 </html>
