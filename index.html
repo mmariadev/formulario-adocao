@@ -42,21 +42,44 @@
             <input type="text" id="cidade" name="cidade"><br>
         </div>
 
-        <div class="tipo_residencia">
-            <label for="tipo_residencia"><br>Selecione o tipo de residência:</label><br>
-            <select id="tipo_residencia" name="tipo_residencia">
-                <option value="casa">Casa</option>
-                <option value="apartamento">Apartamento</option>
-            </select><br>
+         <label for="moradia">Tipo de moradia</label>
+            <select id="moradia" name="moradia" required onchange="verificarMoradia()">
+                <option selected disabled value="">Selecione</option>
+                <option value="Casa">Casa</option>
+                <option value="Apartamento">Apartamento</option>
+            </select>
         </div>
-
-        <div class="possui_quintal">
-            <label for="possui_quintal"><br>Possui quintal?</label><br>
-            <input type="radio" id="possui_quintal_sim" name="possui_quintal" value="sim">
-            <label for="possui_quintal_sim">Sim</label><br>
-            <input type="radio" id="possui_quintal_nao" name="possui_quintal" value="nao">
-            <label for="possui_quintal_nao">Não</label><br>
+        <br>
+        <div id="permite_animais">
+            <label>O condomínio permite animais?</label>
+            <label>
+                <input type="radio" name="permite_animais" value="sim">Sim
+            </label>
+            <label>
+                <input type="radio" name="permite_animais" value="nao">Não
+            </label>
         </div>
+        <br>
+        <fieldset id="tem_quintal">
+            <label for="quintal">Possui quintal?</label>
+            <label>
+                <input type="radio" id="tem_quintal_sim" name="tem_quintal" value="sim" required onchange="verificarSeTemQuintal()">Sim
+            </label>
+            <label>
+                <input type="radio" name="tem_quintal" value="nao" onchange="verificarSeTemQuintal()">Não
+            </label>
+        </fieldset>
+        <br>
+        <fieldset id="quintal_seguro">
+            <label>O quintal é seguro?</label>
+            <label>
+                <input type="radio" name="quintal" value="sim">Sim
+            </label>
+            <label>
+                <input type="radio" name="quintal" value="nao">Não
+            </label>
+        </fieldset>
+        <br>
 
         <div class="ja_teve_pet">
             <label for="ja_teve_pet"><br>Já teve um pet?</label><br>
