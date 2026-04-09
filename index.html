@@ -1,36 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ONG Focinhos</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
     <h1> ONG Focinhos</h1>
     <P>Preencha o formulário abaixo e aguarde nossos colaboradores avaliarem se seu perfil está apto para adoção.</P>
-    <form id="formulario.Adocao">
+    <form id="formularioAdocao">
 
         <div class="nome">
-        <label for="nome_completo">Insira seu nome completo:</label><br>
-        <input type="text" id="nome_completo" name="nome_completo"<br>
+            <label for="nome_completo">Insira seu nome completo:</label><br>
+            <input type="text" id="nome_completo" name="nome_completo" <br>
         </div>
 
         <div class="email">
-        <label for="email"><br>Insira seu email:</label><br>
-        <input type="email" id="email" name="email"<br>
+            <label for="email"><br>Insira seu email:</label><br>
+            <input type="email" id="email" name="email" <br>
         </div>
 
         <div class="telefone">
-           <label for="telefone"><br>Insira seu número de telefone:</label><br>
-           <input type="tel" id="telefone" name="telefone" pattern="\([0-9]{2}\)\s[0-9]{5}-[0-9]{4}" placeholder="(xx) 9xxxx-xxxx"><br>
+            <label for="telefone"><br>Insira seu número de telefone:</label><br>
+            <input type="tel" id="telefone" name="telefone" pattern="\([0-9]{2}\)\s[0-9]{5}-[0-9]{4}"
+                placeholder="(xx) 9xxxx-xxxx"><br>
         </div>
 
         <div class="cpf">
             <label for="CPF"><br>Insira seu CPF:</label><br>
             <input type="text" id="CPF" name="CPF" placeholder="000.000.000-00"><br>
-        </div>  
+        </div>
 
         <div class="idade">
             <label for="idade"><br>Selecione sua idade</label><br>
@@ -42,44 +45,32 @@
             <input type="text" id="cidade" name="cidade"><br>
         </div>
 
-         <label for="moradia">Tipo de moradia</label>
-            <select id="moradia" name="moradia" required onchange="verificarMoradia()">
+        <div class="campo">
+            <label for="moradia">Tipo de moradia</label>
+            <select id="moradia" name="moradia">
                 <option selected disabled value="">Selecione</option>
                 <option value="Casa">Casa</option>
                 <option value="Apartamento">Apartamento</option>
             </select>
         </div>
-        <br>
-        <div id="permite_animais">
+
+        <div id="permite_animais" class="campo">
             <label>O condomínio permite animais?</label>
-            <label>
-                <input type="radio" name="permite_animais" value="sim">Sim
-            </label>
-            <label>
-                <input type="radio" name="permite_animais" value="nao">Não
-            </label>
+            <input type="radio" name="permite_animais" value="sim"> Sim
+            <input type="radio" name="permite_animais" value="nao"> Não
         </div>
-        <br>
-        <fieldset id="tem_quintal">
-            <label for="quintal">Possui quintal?</label>
-            <label>
-                <input type="radio" id="tem_quintal_sim" name="tem_quintal" value="sim" required onchange="verificarSeTemQuintal()">Sim
-            </label>
-            <label>
-                <input type="radio" name="tem_quintal" value="nao" onchange="verificarSeTemQuintal()">Não
-            </label>
+
+        <fieldset id="tem_quintal" class="campo">
+            <label>Possui quintal?</label>
+            <input type="radio" name="tem_quintal" value="sim"> Sim
+            <input type="radio" name="tem_quintal" value="nao"> Não
         </fieldset>
-        <br>
-        <fieldset id="quintal_seguro">
+
+        <fieldset id="quintal_seguro" class="campo">
             <label>O quintal é seguro?</label>
-            <label>
-                <input type="radio" name="quintal" value="sim">Sim
-            </label>
-            <label>
-                <input type="radio" name="quintal" value="nao">Não
-            </label>
+            <input type="radio" name="quintal" value="sim"> Sim
+            <input type="radio" name="quintal" value="nao"> Não
         </fieldset>
-        <br>
 
         <div class="ja_teve_pet">
             <label for="ja_teve_pet"><br>Já teve um pet?</label><br>
@@ -107,7 +98,8 @@
         <div class="enviar">
             <input type="submit" value="Enviar">
         </div>
-    </main>
-    <script src="scripts/regras-negocio.js"></script>
+        </main>
+        <script src="scripts/regras-negocio.js"></script>
 </body>
+
 </html>
